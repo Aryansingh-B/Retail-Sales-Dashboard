@@ -220,8 +220,8 @@ Total Returns    = COUNTROWS('retail_db returns')
 ## 👤 Author
 
 **Aryan Singh**
-- GitHub: [@aryansinghbais](https://github.com/aryansinghbais)
-- Project: [retail-sales-dashboard](https://github.com/aryansinghbais/retail-sales-dashboard)
+- GitHub: [@aryansinghbais](https://github.com/Aryansingh-B)
+- Project: [retail-sales-dashboard](https://github.com/Aryansingh-B/Retail-Sales-Dashboard)
 
 ---
 
