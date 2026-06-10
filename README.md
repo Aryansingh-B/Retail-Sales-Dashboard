@@ -1,4 +1,4 @@
-# 🛒 Retail Sales Dashboard
+#  Retail Sales Dashboard
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
@@ -9,7 +9,7 @@
 
 ---
 
-## 📊 Dashboard Preview
+##  Dashboard Preview
 
 > *(Add your screenshots here after uploading)*
 
@@ -23,23 +23,23 @@
 
 ---
 
-## 🔑 Key Insights
+##  Key Insights
 
 | Insight | Value |
 |---|---|
-| 💰 Total Revenue | ₹12,14,177 |
-| 📦 Total Orders | 3,000 |
-| 📈 YoY Revenue Growth (2024) | +20.10% |
-| 🏆 Top Category | Furniture (32.51%) |
-| 🥈 2nd Category | Electronics (30.00%) |
-| 🔝 Top 2 Categories Combined | 62.51% of total revenue |
-| 🌍 Leading Region | South |
-| 💳 Most Popular Payment | UPI |
-| 🔄 Return Rate | ~12% |
+|  Total Revenue | ₹12,14,177 |
+|  Total Orders | 3,000 |
+|  YoY Revenue Growth (2024) | +20.10% |
+|  Top Category | Furniture (32.51%) |
+|  2nd Category | Electronics (30.00%) |
+|  Top 2 Categories Combined | 62.51% of total revenue |
+|  Leading Region | South |
+|  Most Popular Payment | UPI |
+|  Return Rate | ~12% |
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 retail-sales-dashboard/
@@ -67,7 +67,7 @@ retail-sales-dashboard/
 
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 
 Designed a normalized relational schema in MySQL for a fictional retail business:
 
@@ -90,7 +90,7 @@ returns ────────┘
 
 ---
 
-## ⚙️ Setup & Installation
+##  Setup & Installation
 
 ### Prerequisites
 - MySQL Workbench 8.0+
@@ -113,13 +113,13 @@ python python/retail_data_generator.py
 ```
 Expected output:
 ```
-✓ Inserted 10 categories
-✓ Inserted 100 products
-✓ Inserted 500 customers
-✓ Inserted 3000 orders
-✓ Inserted ~8500 order items
-✓ Inserted ~180 returns
-🎉 All data loaded into retail_db successfully!
+ Inserted 10 categories
+ Inserted 100 products
+ Inserted 500 customers
+ Inserted 3000 orders
+ Inserted ~8500 order items
+ Inserted ~180 returns
+ All data loaded into retail_db successfully!
 ```
 
 ### Step 3 — Run Analysis Queries
