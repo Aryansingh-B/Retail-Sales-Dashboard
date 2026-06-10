@@ -1,35 +1,34 @@
 import random
 from datetime import date, timedelta
 
-import pandas as pd 
+import pandas as pd
+from faker import Faker
 import mysql.connector
-from faker import Faker 
 from sqlalchemy import create_engine, text
 
-# ___ CONFIG ____________________________________________
-DB_HOST = "localhost"
-DB_USER = "root"
-DB_PASSWORD = "your_password"   
-DB_NAME = "retail_db"
+# ── CONFIG ────────────────────────────────────────────────────────
+DB_HOST     = "localhost"
+DB_USER     = "root"
+DB_PASSWORD = "Aryansingh721"     
+DB_NAME     = "retail_db"
 
 NUM_CUSTOMERS = 500
 NUM_ORDERS    = 3000
 START_DATE    = date(2022, 1, 1)
 END_DATE      = date(2024, 12, 31)
-
-# _______________________________________________________
+# ─────────────────────────────────────────────────────────────────
 
 fake = Faker("en_IN")
 random.seed(42)
 
-engine = create_enginer(
-    f"mysql+mysqlconnector://{BD_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}"
+engine = create_engine(
+    f"mysql+mysqlconnector://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}"
 )
 
-# Helper
 
-def rand_data(start: data, end: date) -> data:
-    return start\ + timedelta(days=random.randint(0, (end - start).days))
+#  HELPER
+def rand_date(start: date, end: date) -> date:
+    return start + timedelta(days=random.randint(0, (end - start).days))
 
 
 # ─── 1. CATEGORIES ───────────────────────────────────────────────
@@ -114,7 +113,7 @@ products_df = pd.DataFrame(
              "unit_price","unit_cost","supplier","stock_qty"]
 )
 products_df.to_sql("products", engine, if_exists="append", index=False)
-print(f Inserted {len(products_df)} products")
+print(f" Inserted {len(products_df)} products")
 
 
 # ─── 3. CUSTOMERS ────────────────────────────────────────────────
@@ -230,6 +229,6 @@ for rid, (_, row) in enumerate(return_candidates.iterrows(), start=1):
 
 returns_df = pd.DataFrame(returns_rows)
 returns_df.to_sql("returns", engine, if_exists="append", index=False)
-print(f"✓ Inserted {len(returns_df)} returns")
+print(f" Inserted {len(returns_df)} returns")
 
 print("\n All data loaded into retail_db successfully!")
