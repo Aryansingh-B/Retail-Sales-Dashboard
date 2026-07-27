@@ -2,19 +2,19 @@
   "name": "Executive Retail Analytics",
   "dataColors": [
     "#4E79A7",
-    "#59A14F",
     "#F28E2B",
-    "#E15759",
-    "#76B7B2",
+    "#59A14F",
     "#EDC948",
+    "#76B7B2",
+    "#E15759",
     "#B07AA1",
     "#FF9DA7",
     "#9C755F",
     "#BAB0AC"
   ],
-  "background": "#0F172A",
+  "background": "#3A3A3A",
   "foreground": "#FFFFFF",
-  "tableAccent": "#3B82F6",
+  "tableAccent": "#4E79A7",
   "good": "#22C55E",
   "neutral": "#F59E0B",
   "bad": "#EF4444",
@@ -26,6 +26,7 @@
             "show": true,
             "fontSize": 16,
             "fontFamily": "Segoe UI",
+            "fontStyle": "bold",
             "color": {
               "solid": {
                 "color": "#FFFFFF"
@@ -38,7 +39,7 @@
             "show": true,
             "color": {
               "solid": {
-                "color": "#111827"
+                "color": "#3A3A3A"
               }
             },
             "transparency": 0
@@ -50,7 +51,8 @@
               "solid": {
                 "color": "#E5E7EB"
               }
-            }
+            },
+            "fontSize": 11
           }
         ]
       }
@@ -64,16 +66,62 @@
                 "color": "#FFFFFF"
               }
             },
-            "fontSize": 28
+            "fontSize": 32,
+            "fontStyle": "bold"
           }
         ],
         "categoryLabels": [
           {
             "color": {
               "solid": {
-                "color": "#93C5FD"
+                "color": "#B0B0B0"
               }
-            }
+            },
+            "fontSize": 12
+          }
+        ],
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#3A3A3A"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "barChart": {
+      "*": {
+        "bars": [
+          {
+            "show": true
+          }
+        ],
+        "dataLabels": [
+          {
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "fontSize": 10
+          }
+        ]
+      }
+    },
+    "pieChart": {
+      "*": {
+        "dataLabels": [
+          {
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "fontSize": 10
           }
         ]
       }
@@ -86,7 +134,21 @@
             "gridHorizontal": true,
             "outlineColor": {
               "solid": {
-                "color": "#374151"
+                "color": "#4A4A4A"
+              }
+            }
+          }
+        ],
+        "header": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": "#2A2A2A"
               }
             }
           }
